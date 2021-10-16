@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-	
 	<!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,38 +43,6 @@
 </head>
 
 <body onLoad = textLoad()>
-	<script>
-		// Set the date we're counting down to
-		var countDownDate = new Date("Nov 12, 2021 00:00:00").getTime();
-		
-		// Update the count down every 1 second
-		var x = setInterval(function() {
-		
-		  // Get today's date and time
-		  var now = new Date().getTime();
-		
-		  // Find the distance between now and the count down date
-		  var distance = countDownDate - now;
-		
-		  // Time calculations for days, hours, minutes and seconds
-		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-		
-		  // Display the result in the element with id="demo"
-		  document.getElementById("days0").innerHTML = days;
-		  document.getElementById("hours0").innerHTML = hours;
-		  document.getElementById("minutes0").innerHTML = minutes;
-		  document.getElementById("seconds0").innerHTML = seconds;
-		
-		  // If the count down is finished, write some text
-		  if (distance < 0) {
-			clearInterval(x);
-			document.getElementById("clockdiv").innerHTML = "EVENT STARTED";
-		  }
-		}, 1000);
-	</script>
 	<div id="loader-wrapper">
       <div id="loader"></div>
         <div class="loader-section section-left"></div>
@@ -85,7 +52,8 @@
   <!--navbar-->
   <div class="anim_addi d-none d-md-block">
   <nav class="nav navbar navbar-expand-lg">
-  <a class="navbar-brand logo m-4" href="#"><img src="img/Copy of inGen20Logo_C-01.png" class="img-fluid " width=100px height=40px /></a>
+  <!--a class="navbar-brand logo m-4" href="#"><img src="img/Copy of inGen20Logo_C-01.png" class="img-fluid " width=100px height=40px /></a-->
+  <a class="navbar-brand logo m-4" href="#"><img src="img/inGen21Logo_C-01.png.png" class="img-fluid " width=100px height=40px /></a>
   <span class="navTrigger">
                   <i></i>
                   <i></i>
@@ -105,7 +73,7 @@
     </li>
 	<li class="nav-item">
     <a href="#sponsors">Sponsors</a>
-    </li> 
+    </li>
 	<li class="nav-item">
     <a href="#prizes">Prizes</a>
     </li>
@@ -140,37 +108,38 @@
 <!-- landingpage -->
     <section="landing" style="background-color:transparent;">
     <div class="row justify-content-center">
-	<img class="mainimg" height="1128px" width="161px" src='img/inGen21Logo_C-01.png.png' alt="2021 IngeniusLogo">
+    <img class="mainimg" height="1128px" width="161px" src='img/inGen21Logo_C-01.png.png' alt="2021 IngeniusLogo">
 	</div>
 	<div class="row justify-content-center">
 	<h2 class="bg-transparent text-white justify-content-center getsethack" >#get<span style="color: #28a8e0;">Set</span>Hack</h2>
 	</div>
-    <h2 class="text-center text-white" style=" padding-top:20px;font-size:110%; opacity:1">November 12, 2021</h2>
+    <h2 class="text-center text-white" style=" padding-top:20px;font-size:110%; opacity:1">November 12-13, 2021</h2>
     <h3 class="text-center d-none d-sm-block" style="padding-top:10px; color: #eaf4fc; font-family: 'Raleway' !important;">An annual 24-hour hackathon organised by PES University</h3>
 <!--timer-->
-<h2 class="text-center" style="color:white; font-size:90%;padding-top:20px; padding-bottom:10px;">Starts in </h2>
+<h2 class="text-center" style="color:white; font-size:90%;padding-top:20px; padding-bottom:10px;">Registration Starts in </h2>
 <div class="row justify-content-center">
 <div id="clockdiv">
   <div  >
-    <span id ="days0" class="days"></span>
+    <span class="days"></span>
     <div class="text-white smalltext" style="opacity:1;">Days</div>
   </div>
   <div>
-    <span id ="hours0" class="hours"></span>
+    <span class="hours"></span>
     <div class="smalltext text-white">Hours</div>
   </div>
   <div>
-    <span id ="minutes0" class="minutes"></span>
+    <span class="minutes"></span>
     <div class="smalltext text-white">Minutes</div>
   </div>
   <div>
-    <span id ="seconds0" class="seconds"></span>
+    <span class="seconds"></span>
     <div class="smalltext text-white">Seconds</div>
   </div>
 </div>
 </div>
 <br />
 <!--div class="row justify-content-center applybutton"><a href="http://ingenius.devfolio.co/submissions" target="_blank"><button  id="devfolio-apply-now"><svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" /><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/></svg>View submissions</button></a></div-->
+
 
 </section>
 <div class="container-fluid" style="padding-top:20px;">
@@ -191,7 +160,7 @@
 						<div class="fakeScreen">
 							<p class="line1_2">pesuecc~:$ingenius_hackathon</p>
 							<p class="line1_2">Upcoming Events:</p>
-							<p class="line3_4"><span id="tochange"> October 18 : Git webinar</p>
+							<p class="line3_4"><span id="tochange"></p>
 							<p class="line3_4">><span class="cursor4">_</span></p>
 						</div>
 					  </div>
@@ -275,7 +244,7 @@
 	</div>
 	</div>
 	<div class="col-sm-6 col-md-6 col-12">
-	<img id="timelinesvg" class="img-fluid" style="width:90%; brightness:140%; " src="img/prep_s.PNG"/>
+	<img id="timelinesvg" class="img-fluid" style="width:90%; brightness:140%; " src="img/tL-01.svg"/>
 	</div>
 	</div>
 	</div>
@@ -284,21 +253,21 @@
 				<div class="container justify-content-center align-items-center" style="margin: 0 auto;">
 					<div class="card" style="margin: 0 auto;">
 						<h1 class="d-flex justify-content-center" style = "padding-top:25px;font-family: 'Titillium Web', sans-serif;font-size: 200%;">Our Sponsors</h1>
-						To Be Announced Soon!!!!
-			  <!--<div class="container">
+						<h2 class="d-flex justify-content-center" style = "padding-top:25px;font-family: 'Titillium Web', sans-serif;font-size: 200%;">To Be Announced...</h2>
+			  <div class="container">
 			  <h3 class="display-4" style="padding:40px"> Diamond Sponsors</h3>
 			  </div>
 			  <div class="row justify-content-center">
 
 			 <div class="col-11 col-md-5">
-				  <a href="https://www.crio.do/" target="_blank"><img style="background:#e4e2d6;" class="sponsors-logo align-items-center" src="img/crio1.png"></img></a> 
+				  <a href="https://www.crio.do/" target="_blank"><img style="background:#e4e2d6;" class="sponsors-logo align-items-center" src="img/crio1.png"></img></a> <!--devfolio-->
 				</div>
 
 			  <div class="col-11 col-md-5">
-				  <a href="https://www.devfolio.co/" target="_blank"><img class="sponsors-logo align-items-center" src="img/Devfolio.png"></img></a> 
+				  <a href="https://www.devfolio.co/" target="_blank"><img class="sponsors-logo align-items-center" src="img/Devfolio.png"></img></a> <!--devfolio-->
 				</div>
 				<div class="col-11 col-md-5">
-				 <a href="https://www.wolfram.com/language/" target="_blank"> <img class="sponsors-logo align-items-center" src="img/wolfram.jpg"></img></a> 
+				 <a href="https://www.wolfram.com/language/" target="_blank"> <img class="sponsors-logo align-items-center" src="img/wolfram.jpg"></img></a> <!--devfolio-->
 				</div>
 				</div>
 			  <hr />
@@ -345,10 +314,10 @@
 		  </div>
 		  <div class="row justify-content-center">
 		  <div class="col-5 col-sm-3 col-lg-4" style="object-fit: cover;">
-			 <a href="https://www.streamyard.com/" target="_blank"> <img class="sponsors-logo responsive g"   src="img/streamyard.png" alt="streamyard logo"></img></a> <!--devfolio
+			 <a href="https://www.streamyard.com/" target="_blank"> <img class="sponsors-logo responsive g"   src="img/streamyard.png" alt="streamyard logo"></img></a> <!--devfolio-->
 		  </div>
 		  <div class="col-5 col-sm-3 col-lg-4" style="object-fit: cover;">
-			  <a href="https://www.amigoz.app/" target="_blank"><img class="sponsors-logo responsive g"   src="img/amigoz.png" alt="amigoz logo"></img></a> <!--devfolio
+			  <a href="https://www.amigoz.app/" target="_blank"><img class="sponsors-logo responsive g"   src="img/amigoz.png" alt="amigoz logo"></img></a> <!--devfolio-->
 		  </div>
 		</div>
 		<div class="container">
@@ -379,12 +348,12 @@
 
 			  </div>
 
-			</div> -->
+			</div>
 		  </div>
 		  </div>
 			  </section>
 
-			  <!--<section id="prizes" style="padding-top: 120px;">
+			  <section id="prizes" style="padding-top: 120px;">
 				<div class="container justify-content-center">
 				<div class="row justify-content-center">
 				<div class="col-12 col-sm-6 col-md-6">
@@ -417,7 +386,7 @@
 				</div>
 				</div>
 				</div>
-				</section>-->
+				</section>
 
 
 		<section id="codeofconduct" style="padding-top:120px">
@@ -441,9 +410,10 @@
 							<ul style="list-style-type: disc;">
 								<li> Alternate accounts are prohibited to avoid confusion.</li>
 							</ul>
-							<!--<div class="row justify-content-center" style = "padding-bottom: 10px; padding-top:25px;"><a style="margin:0px; padding:0px;"href = "https://devfolio.co/code-of-conduct" target="_blank"><button class="btn btn-primary btn-lg dev-btn butan">Devfolio </button></a></div>
-<span>Click on the button to know more about Devfolio's Code Of Conduct</span>
-						</div>-->
+							<!--b>Devfolio's Code of Conduct</b-->
+							<!--div class="row justify-content-center" style = "padding-bottom: 10px; padding-top:25px;"><a style="margin:0px; padding:0px;"href = "https://devfolio.co/code-of-conduct" target="_blank"><button class="btn btn-primary btn-lg dev-btn butan">Devfolio </button></a></div-->
+<!--<span>Click on the button to know more about Devfolio's Code Of Conduct</span>-->
+						</div>
 					</div>
 
 			    </div>
@@ -455,133 +425,133 @@
 
 
 		<section id="faq">
-			<div class="accordion-container">
-			 <h1 class="d-flex justify-content-center text-white" style = "font-family: 'Titillium Web', sans-serif;font-size: 43px; padding-bottom: 25px;">FAQs</h1>
-			 <div class="set">
-			<a>
-			<i class="fa fa-plus"></i> <span style="font-size:20px; font-family: Raleway">Can I attend inGenius 2021?</span>
-			</a>
-			<div class="content">
-			 <p>inGenius is open to all college students from any year, branch or degree across the globe</p>
-			</div>
-			 </div>
-			 <div class="set">
-			<a>
-			  <i class="fa fa-plus"></i> <span style="font-size:20px; font-family: Raleway">Is there a registration fee?</span>
-			
-			</a>
-			<div class="content">
-			 <p>No, there is no registration fee</p>
-			</div>
-			 </div>
-			 <div class="set">
-			<a>
-			  <i class="fa fa-plus"></i> <span style="font-size:20px; font-family: Raleway">Whats the preferred team size?</span>
-			
-			</a>
-			<div class="content">
-			 <p>Only team size of 2-4 members will be considered for judging and be eligible for prizes</p>
-			</div>
-			 </div>
-			 <div class="set">
-			<a>
-			  <i class="fa fa-plus"></i> <span style="font-size:20px; font-family: Raleway">Can we participate individually?</span>
-			
-			</a>
-			<div class="content">
-			 <p>Yes, you can but only teams of 2-4 people will be eligible for prizes and judging.</p>
-			</div>
-			 </div>
-			 <div class="set">
-			<a>
-			   <i class="fa fa-plus"></i> <span style="font-size:20px; font-family: Raleway">Where is the venue?</span>
-			
-			</a>
-			<div class="content">
-			 <p>There is no venue. Due to the pandemic we are conducting the event virtually.</p>
-			</div>
-			 </div>
-			 <div class="set">
-			<a>
-			  <i class="fa fa-plus"></i> <span style="font-size:20px; font-family: Raleway">What is the theme of inGenius 2021?</span>
-			
-			</a>
-			<div class="content">
-			 <p> It's an open hack and all domains are allowed</p>
-			</div>
-			 </div>
-			 <div class="set align-items-center">
-			<a class="align-items-center">
-			  <i class="fa fa-plus"></i> <span style="font-size:20px; font-family: Raleway">What should I submit at the end of the hackathon?</span>
-			</a>
-			<div class="content">
-			 <p> You will have to show a working proof of concept of your idea.</p>
-			</div>
-			 </div>
-			
-			 <div class="set align-items-center">
-			<a class="align-items-center">
-			  <i class="fa fa-plus"></i> <span style="font-size:20px; font-family: Raleway">Where can I submit the working proof?</span>
-			</a>
-			<div class="content">
-			 <p> We are using the Devfolio as our platform to conduct the hackathon and hence submissions will be on the same.</p>
-			</div>
-			 </div>
-			 <div class="set">
-			<a>
-			  <i class="fa fa-plus"></i> <span style="font-size:20px; font-family: Raleway">How will you judge?</span>
-			</a>
-			<div class="content">
-			 <p>The panel of judges will consist of industry experts and professionals. They will go through the executable file and will have an interview round with top 10 teams to decide on final evaluations.</p>
-			</div>
-			 </div>
-			 <div class="set">
-			<a>
-			<i class="fa fa-plus"></i> <span style="font-size:20px; font-family: Raleway">I have a question that's not answered here</span>
-			
-			</a>
-			<div class="content">
-			 <p> We're here to help you however you need! Feel free to drop us an email. You could also reach out to us on Instagram, Facebook, Twitter or Linkedin</p>
-			</div>
-			 </div>
-			</div>
-			
-				</section>
-				<section id = "formIngenius">
-					<div class="card dd" id = "formcard" >
-					<div class = "todo  justify-content-center">
-						<h1 class="text-white text-justify contacts " style = "font-family: 'Titillium Web', sans-serif;font-size: 43px; padding-bottom: 45px;">Contact Us</h1>
-					<form action="https://formspree.io/mnqoaowl" method="POST">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="card" style="margin-top: 0px;">
-									<div class="card-body">
-										<p class="card-text text-white" id="test2" style=" margin-top: 0px;"> <span> <b>Come and say hi,  </b></span> <br> <br>
-											Have any further questions or doubts ? Feel free to contact us!
-											Find us at 
-											Megha: +91 7349104342<br>
-											Abhay: +91 9452813020
-											
-											<h3 class = "text-white" style="background: none; font-size: 100%;">See you on the other side at inGenius 2021.</h3>
-												   <br> <br>
-												   <h3 class = "text-white" style="background: none; font-size: 100%;">PES University Electronic City Campus, Hosur Road, Bangalore - 560 100 </h3>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<form action="https://formspree.io/ingeniushack@gmail.com" method="POST" style="padding:2% 10% 10% 10%;">
-									<div class="form-group" style="height: 50px;"><input class="form-control" type="text" style="font-size: 20px;height: 50px; border-radius: 10px;" name="name" placeholder="Name"></div>
-									<div class="form-group" style="height: 50px;"><input class="form-control" type="email" style="font-size: 20px;height: 50px;border-radius: 10px;" name="_replyto" placeholder="Email"></div>
-									<div class="form-group"><textarea class="form-control" name="message" style="font-size: 20px; border-radius: 10px;" placeholder="Message" rows="8"></textarea></div>
-									<div class="form-group"><button class="btn btn-primary" type="submit" style="font-size: 25px; color:#2c0023 ; background:#28a8e0;">Send </button></div>
-								</form>
-							</div>
+<div class="accordion-container">
+ <h1 class="d-flex justify-content-center text-white" style = "font-family: 'Titillium Web', sans-serif;font-size: 43px; padding-bottom: 25px;">FAQs</h1>
+ <div class="set">
+<a>
+<i class="fa fa-plus"></i> <span style="font-size:20px; font-family: Raleway">Can I attend inGenius 2021?</span>
+</a>
+<div class="content">
+ <p>inGenius is open to all college students from any year, branch or degree across the globe</p>
+</div>
+ </div>
+ <div class="set">
+<a>
+  <i class="fa fa-plus"></i> <span style="font-size:20px; font-family: Raleway">Is there a registration fee?</span>
+
+</a>
+<div class="content">
+ <p>No, there is no registration fee</p>
+</div>
+ </div>
+ <div class="set">
+<a>
+  <i class="fa fa-plus"></i> <span style="font-size:20px; font-family: Raleway">Whats the preferred team size?</span>
+
+</a>
+<div class="content">
+ <p>Only team size of 2-4 members will be considered for judging and be eligible for prizes</p>
+</div>
+ </div>
+ <div class="set">
+<a>
+  <i class="fa fa-plus"></i> <span style="font-size:20px; font-family: Raleway">Can we participate individually?</span>
+
+</a>
+<div class="content">
+ <p>Yes, you can but only teams of 2-4 people will be eligible for prizes and judging.</p>
+</div>
+ </div>
+ <div class="set">
+<a>
+   <i class="fa fa-plus"></i> <span style="font-size:20px; font-family: Raleway">Where is the venue?</span>
+
+</a>
+<div class="content">
+ <p>There is no venue. Due to the pandemic we are conducting the event virtually.</p>
+</div>
+ </div>
+ <div class="set">
+<a>
+  <i class="fa fa-plus"></i> <span style="font-size:20px; font-family: Raleway">What is the theme of inGenius 2021?</span>
+
+</a>
+<div class="content">
+ <p> It's an open hack and all domains are allowed</p>
+</div>
+ </div>
+ <div class="set align-items-center">
+<a class="align-items-center">
+  <i class="fa fa-plus"></i> <span style="font-size:20px; font-family: Raleway">What should I submit at the end of the hackathon?</span>
+</a>
+<div class="content">
+ <p> You will have to show a working proof of concept of your idea.</p>
+</div>
+ </div>
+
+ <div class="set align-items-center">
+<a class="align-items-center">
+  <i class="fa fa-plus"></i> <span style="font-size:20px; font-family: Raleway">Where can I submit the working proof?</span>
+</a>
+<div class="content">
+ <p> We are using the Devfolio as our platform to conduct the hackathon and hence submissions will be on the same.</p>
+</div>
+ </div>
+ <div class="set">
+<a>
+  <i class="fa fa-plus"></i> <span style="font-size:20px; font-family: Raleway">How will you judge?</span>
+</a>
+<div class="content">
+ <p>The panel of judges will consist of industry experts and professionals. They will go through the executable file and will have an interview round with top 10 teams to decide on final evaluations.</p>
+</div>
+ </div>
+ <div class="set">
+<a>
+<i class="fa fa-plus"></i> <span style="font-size:20px; font-family: Raleway">I have a question that's not answered here</span>
+
+</a>
+<div class="content">
+ <p> We're here to help you however you need! Feel free to drop us an email. You could also reach out to us on Instagram, Facebook, Twitter or Linkedin</p>
+</div>
+ </div>
+</div>
+
+    </section>
+	<section id = "formIngenius">
+		<div class="card dd" id = "formcard" >
+		<div class = "todo  justify-content-center">
+			<h1 class="text-white text-justify contacts " style = "font-family: 'Titillium Web', sans-serif;font-size: 43px; padding-bottom: 45px;">Contact Us</h1>
+		<form action="https://formspree.io/mnqoaowl" method="POST">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="card" style="margin-top: 0px;">
+						<div class="card-body">
+							<p class="card-text text-white" id="test2" style=" margin-top: 0px;"> <span> <b>Come and say hi,  </b></span> <br> <br>
+								Have any further questions or doubts ? Feel free to contact us!
+								Find us at 
+								Megha: +91 7349104342<br>
+								Abhay: +91 9452813020
+								
+								<h3 class = "text-white" style="background: none; font-size: 100%;">See you on the other side at inGenius 2021.</h3>
+									   <br> <br>
+									   <h3 class = "text-white" style="background: none; font-size: 100%;">PES University Electronic City Campus, Hosur Road, Bangalore - 560 100 </h3>
 						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<form action="https://formspree.io/ingeniushack@gmail.com" method="POST" style="padding:2% 10% 10% 10%;">
+						<div class="form-group" style="height: 50px;"><input class="form-control" type="text" style="font-size: 20px;height: 50px; border-radius: 10px;" name="name" placeholder="Name"></div>
+						<div class="form-group" style="height: 50px;"><input class="form-control" type="email" style="font-size: 20px;height: 50px;border-radius: 10px;" name="_replyto" placeholder="Email"></div>
+						<div class="form-group"><textarea class="form-control" name="message" style="font-size: 20px; border-radius: 10px;" placeholder="Message" rows="8"></textarea></div>
+						<div class="form-group"><button class="btn btn-primary" type="submit" style="font-size: 25px; color:#2c0023 ; background:#28a8e0;">Send </button></div>
 					</form>
 				</div>
 			</div>
-			
-			</section>
+		</form>
+	</div>
+</div>
+
+</section>
 
 
 	<div class="footer">
@@ -643,55 +613,55 @@
     //     }, 1000);
     //   }
 
-    //   function startTimer(id, deadline) {
-    //     var timerInterval = setInterval(function () {
-    //       var clock = document.getElementById(id);
-    //       var timer = updateTimer(deadline);
+      function startTimer(id, deadline) {
+        var timerInterval = setInterval(function () {
+          var clock = document.getElementById(id);
+          var timer = updateTimer(deadline);
 
-    //       clock.innerHTML =
-    //         "<span>" +
-    //         timer.days +
-    //         "</span>" +
-    //         "<span>" +
-    //         timer.hours +
-    //         "</span>" +
-    //         "<span>" +
-    //         timer.minutes +
-    //         "</span>" +
-    //         "<span>" +
-    //         timer.seconds +
-    //         "</span>";
+          clock.innerHTML =
+            "<span>" +
+            timer.days +
+            "</span>" +
+            "<span>" +
+            timer.hours +
+            "</span>" +
+            "<span>" +
+            timer.minutes +
+            "</span>" +
+            "<span>" +
+            timer.seconds +
+            "</span>";
 
-    //       //animation
-    //     //   var spans = clock.getElementsByTagName("span");
-    //     //   animateClock(spans[3]);
-    //     //   if (timer.seconds == 59) animateClock(spans[2]);
-    //     //   if (timer.minutes == 59 && timer.seconds == 59) animateClock(spans[1]);
-    //     //   if (timer.hours == 23 && timer.minutes == 59 && timer.seconds == 59)
-    //     //     animateClock(spans[0]);
+          //animation
+        //   var spans = clock.getElementsByTagName("span");
+        //   animateClock(spans[3]);
+        //   if (timer.seconds == 59) animateClock(spans[2]);
+        //   if (timer.minutes == 59 && timer.seconds == 59) animateClock(spans[1]);
+        //   if (timer.hours == 23 && timer.minutes == 59 && timer.seconds == 59)
+        //     animateClock(spans[0]);
 
-    //       //check for end of time
-    //       if (timer.total < 1) {
-    //         clearInterval(timerInterval);
-    //         clock.innerHTML =
-    //           "<span>0</span><span>0</span><span>0</span><span>0</span>";
-    //       }
-    //     }, 1000);
-    //   }
+          //check for end of time
+          if (timer.total < 1) {
+            clearInterval(timerInterval);
+            clock.innerHTML =
+              "<span>0</span><span>0</span><span>0</span><span>0</span>";
+          }
+        }, 1000);
+      }
 
-    //   window.onload = function () {
-    //     var deadline = new Date("November 12, 2021 00:00:00");
-    //     startTimer("clock", deadline);
+      window.onload = function () {
+        var deadline = new Date("October 30, 2020 00:00:00");
+        startTimer("clock", deadline);
 
-    //     var today = new Date();
-  	// 	  var aaj = today.getDate();
-	// 		var hr = today.getHours()
-	// 		console.log(hr)
-  	// 	  	console.log('ss',aaj)
-	// 		document.getElementById("tochange").innerHTML = "Its a wrap from team Ingenius. Hope you enjoyed all our events!";
-    //   };
+        var today = new Date();
+  		  var aaj = today.getDate();
+			var hr = today.getHours()
+			console.log(hr)
+  		  	console.log('ss',aaj)
+			document.getElementById("tochange").innerHTML = "Its a wrap from team Ingenius. Hope you enjoyed all our events!";
+      };
 
-	// </script>
+	</script>
 	<script>
 		var acordion = document.getElementsByClassName('accordions');
 
